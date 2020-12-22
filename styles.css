@@ -2,6 +2,17 @@
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
 }
 
 .container {
@@ -70,7 +81,7 @@ body {
     position: relative;
 }
 .images-img-background {
-    height: 300px;
+    height: 600px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -111,6 +122,10 @@ body {
         padding-top: 30px;
         width: 100%;
     }
+
+    .profile-content-wrapper {
+        margin-top: -20px;
+    }
 }
 
 /* about page */
@@ -119,8 +134,12 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.images-img-background {
-    max-width: 100%;
+.about-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-content-wrapper {
@@ -129,4 +148,92 @@ body {
 
 .profile-content-wrapper h1 {
     color: lightseagreen;
+}
+
+/* footer of pages */
+
+footer {
+    position: absolute;
+    bottom: 0;
+  
+    background-color:black;
+    width: 100vw;
+    height: 12.5rem;
+
+    
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color:black;
+    width: 100vw;
+    height: 40%;
+}
+
+.footer-wrapper h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    padding-top: 80px;
+    color: gray;
+}
+
+.footer-wrapper p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.socials a {
+    font-size: 1.1rem;
+}
+
+.socials a:hover {
+    color: aqua;
+}
+
+.footer-bottom {
+    background-color:black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    padding-top: 60px;
+    color: gray;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    color: burlywood;
 }
